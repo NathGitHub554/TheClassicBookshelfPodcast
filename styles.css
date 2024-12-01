@@ -1,0 +1,107 @@
+* {box-sizing: border-box;}
+
+@font-face {font-family: "TitleFont";
+            src: url(fonts/VIVALDII.TTF);
+			}
+	   
+	   body {margin: 0px;
+	         font-size: 100%;}
+   
+       main {display: block;
+	         width: 100%;
+			 height: 100%;
+			 margin-left: auto;
+			 margin-right: auto;
+			 margin-top: 0px;
+			 background-color: #0b710b;
+			}
+   
+       header {background-image: linear-gradient(to right, #0b710b 12%, forestgreen 100%);
+	           width: 100%;	
+               height: 100%;		   
+			   margin-top: 0px;
+			   margin-bottom: 0px;
+			   }
+			   
+		#titleSwirl {margin-top: 2%;
+		             margin-bottom: 1%;
+		             float: left;}
+					 
+		
+					 
+		#maintitle {font-family: TitleFont;
+		            color: gold;
+					font-size: 7em;
+					text-shadow: 3px 3px 1px black;
+					margin: 0px;
+		            }
+					
+		h2.subtitle {font-family: TitleFOnt;
+		             color: gold;
+					 font-size: 4em;
+		             text-shadow: 3px 3px 1px black;
+					 margin-left: 300px;
+					 margin-top: 0px;
+					 margin-bottom: 0px;
+					 margin-right: 0px;
+					 padding-bottom: 1%;
+					 }
+			  
+		#titlelink {text-decoration: none;
+		            outline: 0;}
+   
+       .topnav:link, .topnav:visited {display:flex;
+	                                  flex-direction: row;
+                                      justify-content: center;
+									  flex-wrap: wrap;
+                                       text-decoration: none;
+		                               outline: 0;
+				                       font-family: arial, sans-serif;
+				                       font-weight: bold;
+						               color: black;
+                                       font-size: 1.3em;
+                                       padding: 10px;
+									   background-color: springgreen;
+									   transition: background-color .3s, color .3s;
+									   }
+                                       
+        .topnav:hover {color: gold;
+                       background-color: forestgreen}
+	
+
+        table.navTable {width: 100%;
+               margin-left: auto;
+               margin-right: auto;
+               border-collapse: collapse;
+			   border-top: 4px solid black;
+			   border-bottom: 3.5px solid black;
+               }
+               
+        td.navTable {
+            width: 25%;
+            text-align: center;
+			border-right: 2px solid black;
+ 			}
+			
+	    td:last-child.navTable {border:none;}
+	
+	   
+	    footer {background-color: forestgreen;
+	            width: 100%;
+				height: 100%;
+			    margin-left: 0px;
+			    margin-right: 0px;
+			    height: 100%;
+			    display: block;
+				border-top: 3px solid black;
+				}
+				
+	    #copy {font-family: Arial, Sans-serif;
+		       font-size: 1em;
+			   text-align: center;
+			   padding: 0.5em auto;
+			   vertical-align: baseline;
+		      }
+			  
+	    
+		
