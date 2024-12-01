@@ -67,6 +67,11 @@
                                        
         .topnav:hover {color: gold;
                        background-color: forestgreen}
+					   
+		a.topnav.current {background-color: gold;}
+		
+		a.topnav.current:hover {color: green;}
+		
 	
 
         table.navTable {width: 100%;
