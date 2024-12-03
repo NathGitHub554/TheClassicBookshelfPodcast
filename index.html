@@ -44,7 +44,8 @@
 		td.storylist {border-top: 4px solid black;
 		              padding: 15px;
 		           	  font-family: Arial, sans-serif;
-			          background-color: rgb(243,245,143)}
+			          background-color: rgb(243,245,143);
+					  width: 100%;}
 			
 	    .storylist:link {outline: 0;
 					     padding: 15px;
@@ -92,6 +93,38 @@
 					margin-right: 70px;
 					margin-top: 60px;
 					text-align: justify;}
+					
+	    hr.divider {background-color: gold;
+		            border: none;
+					height: 0.5em;
+					margin-top: 100px;
+					margin-bottom: 80px;
+					margin-left: auto;
+					margin-right: auto;
+					width: 95%;}
+					
+		
+		#todo_title {font-size: 3em;
+		             font-family: Arial, "sans-serif";
+					 color: gold;
+					 text-shadow: 3px 3px black;
+					 text-decoration: underline;}
+ 
+		figure {display: flex;
+		        flex-direction: column;
+                align-items: center;
+				width: 15%;
+				margin: 50px;}
+				
+		figcaption {padding-top: 1em;
+					font-family: Arial, "sans-serif";
+					color: gold;
+					font-weight: bold;
+					font-size: 1.3em;}
+					
+	    section {display: flex;
+		         flex-direction: row;
+				 justify-content: center;}
 					
 		#submit {clear: both;
 		        background-color: blue;}
@@ -153,15 +186,43 @@
 	   
 	   		   
 	   <a class="cta" href="episodes.html">Listen Here</a>
+	   
+	   <hr class="divider">
+	   
+	   <article>
+	       <h3 id="todo_title">Things to Do:</h3>
+		   <section id="things_todo">
+		   <figure>
+		       <a href="#listen"><img class="todo_img" src="assets/headphones.png" alt="headphones icon"></a>
+			   <figcaption>Listen</figcaption>
+		   </figure>
+		   
+		   <figure>
+		       <a href="#submit"><img class="todo_img" src="assets/lightbulb.png" alt="lightbulb icon"></a>
+			   <figcaption>Submit a Story Idea</figcaption>
+		   </figure>
+		   
+		   <figure>
+		      <a href="#join"><img class="todo_img" src="assets/mic.png" alt="microphone icon"></a>
+			  <figcaption>Join the Show</figcaption>
+		   </figure>
+		   </section>
+	   </article>
+	   
+	   <article>
+		    <h3 id="listen">Listen to the Podcast</h3>
+	        <p>Each episode has a short story, such as "The Ransom of Red Chief," by O. Henry, or </p>
+		    <a href="episodes.html#form">Submit your ideas here</a>
+		</article>
 	   	   
-        <article id="submit">
-		    <h3>Do You Have an Idea for a Story?</h3>
+        <article>
+		    <h3 id="submit">Do You Have an Idea for a Story?</h3>
 	        <p>If you have an idea for a short story I should read for a future episode, click the link and then fill out the form. If your idea is accepted, I will contact you to let you know, and in that show, I will mention your name in the introduction.</p>
 		    <a href="episodes.html#form">Submit your ideas here</a>
 		</article>
 		
-		<article id="join">
-		    <h3>Join the Show: Read in an Episode</h3>
+		<article>
+		    <h3 id="join">Join the Show: Read in an Episode</h3>
 			<p>Do you want to read in one of <em>The Classic Bookshelf Podcast</em> episodes? To <a href="JoinTheShow.html">Join the Show,</a> look at the future episodes, and choose a character you want to do. Then, follow the instructions to record your voice, fill out your information, and upload the audio file, then send in the form. I will listen to the audio file and contact you to if you have been accepted to be on the show. See future stories here:</p>
 			
 			<table class="futurestories">
@@ -182,6 +243,7 @@
    </main>	  
    <footer>
        <p id="copy" class="footext">Copyright &copy;&nbsp;2024 The TBD Podcast</p>
+	   
    </footer>
    </body>
 </html>

@@ -57,6 +57,28 @@ Link to Unplash.com License:
 
 	https://unsplash.com/license
 
+-------------------------------------------------------------------------------------------------------
+
+Link to Icons on Index.html:
+
+	Headphones: https://pixabay.com/vectors/icon-headphones-hearing-157355/
+
+	Microphone: https://pixabay.com/vectors/icon-mic-microphone-1298908/
+
+	Lightbulb: https://pixabay.com/vectors/lightbulb-bulb-black-symbol-312459/
+
+Link to Image Author: 
+
+	Headphones: https://pixabay.com/users/openclipart-vectors-30363/
+
+	Microphone: https://pixabay.com/users/openclipart-vectors-30363/
+	
+	Lightbulb: https://pixabay.com/users/clker-free-vector-images-3736/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=312459
+
+Link to Pixabay.com License:
+
+	https://pixabay.com/service/license-summary/
+
 
 		
 
