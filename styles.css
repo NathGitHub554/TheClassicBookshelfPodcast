@@ -39,7 +39,7 @@
 					margin: 0px;
 		            }
 					
-		h2.subtitle {font-family: TitleFOnt;
+		#subtitle {font-family: TitleFOnt;
 		             color: gold;
 					 font-size: 4em;
 		             text-shadow: 3px 3px 1px black;

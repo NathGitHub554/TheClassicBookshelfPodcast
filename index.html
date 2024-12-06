@@ -65,13 +65,21 @@
 					     color: black;}
 						 
 		.storylist:visited {color: black;}
+		
+		#desc-main {width: 60%;
+		            font-family: arial;
+					font-size: 1.7em;
+					margin-left: 60px;
+					margin-right: 70px;
+					margin-top: 60px;
+					text-align: left;}
 					 
 		a.cta {display: block;
-		       width: 15%;
+		       width: 30%;
 		       outline:0;
                text-decoration: none;
 			   text-align: center;
-               font-size: 2em;
+               font-size: 1em;
 			   font-family: Arial, "sans-serif";
 			   color: darkgreen;
 			   background-color: gold;
@@ -79,8 +87,9 @@
 			   border-radius: 50px;
 			   border: 5px solid black;
 			   font-weight: bold;
-			   margin-left: 25%;
-			   margin-top: 1em;
+			   margin-left: auto;
+			   margin-right: auto;
+			   margin-top: 2em;
 			   transition: 0.1s, background-image 0.1s;
 			   }
 
@@ -95,14 +104,6 @@
 				 margin-top: 80px;
 				 font-family: arial, "sans-serif";
 		         }
-				 
-	    #desc-main {width: 60%;
-		            font-family: arial;
-					font-size: 1.7em;
-					margin-left: 60px;
-					margin-right: 70px;
-					margin-top: 60px;
-					text-align: left;}
 					
 	    hr.divider {background-color: gold;
 		            border: none;
@@ -173,27 +174,66 @@
 				
 	    footer {clear: both;}
 		
-		@media screen and (max-width: 1290px) {
-		    section {text-align: center;}
-		}
-
+		/* Media Query Section*/
 		
-		@media screen and (max-width: 674px) {
-		    #things_todo {display: flex;
+		@media only screen and (max-width: 600px) {
+		
+		#maintitle {font-size: 3em;}
+		
+		#subtitle {font-size: 2em;
+		           margin-left: 10px;}
+		
+		#titleSwirl {width: 90px;
+		             height: 90px;
+					 margin-top: 5px;
+					 margin-bottom: 0px;}
+		
+		#things_todo {display: flex;
 			              flex-direction: column;
 					      justify-content: center;
 					      align-items: center;}
 						  
 			.todo, .text {display: flex;
 			       flex-direction: column;
-				   justify-content: center;}
+				   justify-content: center;
+				   align-items; center;
+				   width: 95%;}
+			
+			a.cta {width: 60%;}
+			
+				   
+			.sub_cta {margin-right: auto;
+			          margin-left: auto;
+					  width: 60%;}
 					 
 		    #eplist {width: 95%;
 			         margin-left: auto;
 					 margin-right: auto;}
 					 
-			figure {width: 50%;}		 
+			#desc-main {display: flex;
+			            flex-direction: column;
+						width: 95%;
+						margin-right: auto;
+						margin-left: auto;
+						padding: 10px;
+			            }
+					 
+			figure {width: 50%;}
+		
 		}
+		
+		@media only screen and (min-width: 600px) {
+		
+		
+		
+		}
+		
+		@media only screen and (min-width: 768px) {}
+		
+		@media only screen and (min-width: 992px) {}
+		
+		@media only screen and (min-width: 1200px) {}
+
 
 		
 				   
@@ -206,7 +246,7 @@
       <header>
       <a href="index.html" id="titlelink"><img class="title" id="titleSwirl"src="assets/Swirl.png" alt="gold swirl"></a>
 	  <h1 id="maintitle">The Classic Bookshelf Podcast</h1>
-	  <h2 class="subtitle">Classic Short Stories, Read Aloud</h2>
+	  <h2 id="subtitle">Classic Short Stories, Read Aloud</h2>
 
     <nav class="sitenav" id="navbar">
         <a class="topnav current" href="index.html">Home</a>
@@ -221,8 +261,6 @@
    
    <main>
        <img id="shelfImg" src="assets/bookshelf.png" alt="bookshelf">
-	   
-	   <section id="introtable">
 	   
 	   <article id="eplist">
 	       <table class="storylist">
@@ -251,13 +289,13 @@
 		   <hr>
 		   
 		   <p>The Classic Bookshelf Podcast features classic, public domain short stories, read by <a href="AboutPage.html">Nathanael Bayne.</a> Each episode features a new story by authors like Charles Dickens or G. K. Chesterton. The stories can be serious, funny, or scary, but they are all tales that deserve to be listened to. I hope you enjoy listening to this incredible podcast.</p>
+		   
+		   <a class="cta" href="episodes.html">Listen Here</a>
 	   </article> 
-	   
-	   </section>
-	   
+	   	   
 	   
 	   		   
-	   <a class="cta" href="episodes.html">Listen Here</a>
+
 	   
 	   <hr class="divider">
 	   
