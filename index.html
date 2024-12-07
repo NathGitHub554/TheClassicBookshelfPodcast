@@ -28,7 +28,8 @@
 				  font-family: TitleFont;
 				  text-shadow: 2px 2px black;}
 				  
-		h3 {font-size: 1.6em;}
+		h3 {font-size: 1.6em;
+		    margin-top: 0px;}
 				  
 	    hr {background-color: gold;
 		    height: 0.2em;
@@ -143,10 +144,14 @@
 		       font-family: Arial, "sans-serif";
 			   padding: 20px;
 			   margin: 20px;
+			   margin-bottom: 50px;
+			   margin-top: 100px;
 			   float: left;}
 			   
 	    .todo_photo {border: 5px solid black;
 		           margin-right: 50px;
+				   width: 300px;
+				   height: 300px;
 		           }
 				   
 		#things_todo {display: flex;
@@ -206,17 +211,18 @@
 			          margin-left: auto;
 					  width: 60%;}
 					 
-		    #eplist {width: 95%;
-			         margin-left: auto;
-					 margin-right: auto;}
-					 
-			#desc-main {display: flex;
-			            flex-direction: column;
-						width: 95%;
+			#desc-main {width: 95%;
 						margin-right: auto;
 						margin-left: auto;
-						padding: 10px;
 			            }
+						
+			#eplist {width: 95%;
+			         margin-left: auto;
+			         margin-right: auto;}
+						
+		    .intro-section {display: flex;
+			                flex-direction: column;
+							}
 					 
 			figure {width: 50%;}
 		
@@ -262,6 +268,8 @@
    <main>
        <img id="shelfImg" src="assets/bookshelf.png" alt="bookshelf">
 	   
+	   
+	   <section class="intro-section">
 	   <article id="eplist">
 	       <table class="storylist">
 		   <caption>Latest Podcast Episodes</caption>
@@ -292,7 +300,7 @@
 		   
 		   <a class="cta" href="episodes.html">Listen Here</a>
 	   </article> 
-	   	   
+	   </section>
 	   
 	   		   
 
@@ -329,6 +337,7 @@
 		</article>
 	   	   
         <article class="todo">
+		    <img class="todo_photo" src="assets/submitting_lady.jpg" alt="a lady typing on a computer">
 		    <section class="text">
 		        <h3 id="submit">Do You Have an Idea for a Story?</h3>
 	            <p>If you have an idea for a short story I should read for a future episode, click the link and then fill out the form. If your idea is accepted, I will contact you to let you know. In the episode with that story, I will mention your name in the introduction.</p>
@@ -337,9 +346,10 @@
 		</article>
 		
 		<article class="todo">
+		    <img class="todo_photo" src="assets/podcasting_man.jpg" alt="a man podcasting">
 		    <section class="text">
 		        <h3 id="join">Join the Show: Read in an Episode</h3>
-			    <p>Do you want to read in one of <em>The Classic Bookshelf Podcast</em> episodes? To Join the Show, look at the future episodes, and choose a character you want to do. Then, follow the instructions to record your voice, fill out your information, and upload the audio file. Then, send in the form. I will listen to the audio file and contact you to if you have been accepted to be on the show.</p>
+			    <p>Do you want to read in one of <em>The Classic Bookshelf Podcast</em> episodes? To Join the Show, look at the future episodes, and choose a character you want to do. Then, follow the instructions to fill out the form and submit your audition. I will look at your audition and contact you if you have been accepted to Join the Show.</p>
 			    <a class="sub_cta" href="JoinTheShow.html">Join the Show</a>
 		    </section>
 		</article>			
