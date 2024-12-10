@@ -104,22 +104,31 @@
 		   
 	    footer {background-color: forestgreen;
 	            width: 100%;
-				height: 4em;
+				height: 100%;
 			    margin-left: 0px;
 			    margin-right: 0px;
+				margin-bottom: 0px;
 			    display: block;
 				border-top: 3px solid black;
 				margin-top: 0px;
 				clear: both;
-				clear: both;
 				}
 				
 	    #copy {font-family: Arial, Sans-serif;
-		       font-size: 1em;
+		       font-size: 1.5em;
 			   text-align: center;
 			   padding: 0.5em auto;
-			   vertical-align: baseline;
+			   padding-bottom: 30px;
+			   margin: 0px;
 		      }
 			  
+		address {font-style: normal;
+		          font-family: Arial, "sans-serif";
+				  font-weight: bold;
+		          font-size: 1.3em;
+				  text-align: center;
+				  margin-bottom: 60px;}
+				  
+	    #contact-title {font-size: 1.5em;}
 	    
 		
