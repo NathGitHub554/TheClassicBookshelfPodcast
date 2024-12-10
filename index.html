@@ -122,18 +122,13 @@
 					 text-shadow: 3px 3px black;
 					 text-decoration: underline;
 					 text-align: center;}
- 
-		figure {display: flex;
-		        flex-direction: column;
-                align-items: center;
-				width: 15%;
-				margin: 50px;}
 				
-		figcaption {padding-top: 1em;
+		figcaption {padding: 10px;
 					font-family: Arial, "sans-serif";
-					color: gold;
+					color: black;
 					font-weight: bold;
-					font-size: 1.3em;}
+					font-size: 1.3em;
+					text-align: center;}
 					
 		.title_todo {clear: both;
 		         margin-bottom: 0px;}
@@ -184,8 +179,7 @@
 	/*--------------------icon section--------------------------------------------*/
 						
 	
-	.animation:hover {height: 100px;
-	                  animation-name: wiggle;
+	.animation:hover {animation-name: wiggle;
 		              animation-duration: 1.4s;
 		              animation-iteration-count: infinite;
 		              animation-direction: alternate;
@@ -217,7 +211,7 @@
 		
 		}
 	
-	#headphones {display: block;
+	/*#headphones {display: block;
 	       width: 83px;
 	       height: 80px;
 	       background-image: url(assets/headphones.png);
@@ -226,8 +220,6 @@
 		   padding: 20px;
 		   transition: background-color 0.5s;
 		   }
-		   
-    #headphones:hover {background-image: url(assets/headphones_gold.png);}
 	
 	#lightbulb {display: block;
 	       width: 54px;
@@ -237,17 +229,25 @@
 		   background-position: center center;
 		   transition: background-color 0.5s;}
 		   
-    #lightbulb:hover {background-image: url(assets/lightbulb_gold.png);}
-	
 	#microphone {display: block;
 	       width: 40px;
 	       height: 80px;
 	       background-image: url(assets/mic.png);
 		   background-repeat: no-repeat;
 		   background-position: center center;
-		   transition: background-color 0.5s;}
+		   transition: background-color 0.5s;}*/
 		   
-    #microphone:hover {background-image: url(assets/mic_gold.png);}
+	figure {display: flex;
+	        flex-direction: column;
+			justify-content: center;
+			align-items: center;
+	        width: 200px;
+			height: 90%;
+	        border: 5px solid black;
+	        background-color: gold;
+			border-radius: 50px;
+			padding: 10px;
+			box-shadow: 5px 5px 4px black;}
 				
 	/*----------------------------------------------------------------------*/
 				
@@ -277,6 +277,11 @@
 				   justify-content: center;
 				   align-items; center;
 				   width: 95%;}
+				   
+			.title_todo {margin-top: 20px;
+			             }
+			
+			.para {margin-top: 5px;}
 			
 			a.cta {width: 60%;}
 			
@@ -297,9 +302,9 @@
 		    .intro-section {display: flex;
 			                flex-direction: column;
 							}
-					 
-			figure {width: 50%;}
-		
+							
+			figure {margin-bottom: 50px;}
+
 		}
 		
 		@media only screen and (min-width: 600px) {
@@ -384,20 +389,20 @@
 	   <article id="icons">
 	       <h3 id="todo_title">Things to Do:</h3>
 		   <section id="things_todo">
-		   <figure>
-		       <a href="#listen" id="headphones" class="animation"></a>
+		   <a href="#listen"><figure class="animation">
+		       <img src="assets/headphones.png" alt="headphones icon">
 			   <figcaption>Listen</figcaption>
-		   </figure>
+		   </figure></a>
 		   
-		   <figure>
-		       <a href="#submit" id="lightbulb" class="animation"></a>
-			   <figcaption>Submit a Story Idea</figcaption>
-		   </figure>
+		   <a href="#submit"><figure class="animation">
+		       <img src="assets/lightbulb.png" alt="lightbulb icon">
+   		       <figcaption>Submit a Story Idea</figcaption>
+		   </figure></a>
 		   
-		   <figure>
-		      <a href="#join"id="microphone" class="animation"></a>
+		   <a href="#join"><figure class="animation">
+		      <img src="assets/mic.png" alt="microphone icon">
 			  <figcaption>Join the Show</figcaption>
-		   </figure>
+		   </figure></a>
 		   </section>
 		</article>
 		
