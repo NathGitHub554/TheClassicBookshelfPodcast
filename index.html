@@ -67,6 +67,15 @@
 						 
 		.storylist:visited {color: black;}
 		
+	    table.future {border-collapse: collapse;
+		              margin-right: auto;
+					  margin-left: auto;
+					  margin-bottom: 50px;}
+	
+	    td.future, th.future {padding: 5px;
+	                          padding-right: 20px;
+			                  text-align: left;}
+		
 		#desc-main {width: 60%;
 		            font-family: arial;
 					font-size: 1.7em;
@@ -338,7 +347,7 @@
       <header>
       <a href="index.html" id="titlelink"><img class="title" id="titleSwirl"src="assets/Swirl.png" alt="gold swirl"></a>
 	  <h1 id="maintitle">The Classic Bookshelf Podcast</h1>
-	  <h2 id="subtitle">Classic Short Stories, Read Aloud</h2>
+	  <h2 class="subtitle">Classic Short Stories, Read Aloud</h2>
 
     <nav class="sitenav" id="navbar">
         <a class="topnav current" href="index.html">Home</a>
@@ -442,20 +451,31 @@
 		    </section>
 		</article>			
 		
-			<table class="futurestories">
-			    <tr>
-				    <th>Future Stories</th>
-				</tr>
-			    <tr>
-				    <td class="futurestories">The Signal-Man: Charles Dickens</td>
-				</tr>
-				<tr>
-				    <td class="futurestories">The Red-Headed League: Arthur Conan Doyle</td>
-				</tr>
-				<tr>
-				    <td class="futurestories">The Gift of the Maji: O. Henry</td>
-				</tr>
-			</table>
+			<table class="future">
+			   <tr>
+			       <th class="future">Story</th>
+				   <th class="future">Author</th>
+				   <th class="future">Genre</th>
+			   </tr>
+			   
+			   <tr>
+			       <td class="future">The Signal-Man</td>
+				   <td class="future">Charles Dickens</td>
+				   <td class="future">Ghost Story</td>
+			   </tr>
+			   
+			   <tr>
+			       <td class="future">The Red-Headed League</td>
+				   <td class="future">Arthur Conan Doyle</td>
+				   <td class="future">Mystery</td>
+			   </tr>
+			   
+			   <tr>
+			       <td class="future">The Gift of the Maji</td>
+				   <td class="future">O. Henry</td>
+				   <td class="future">Sentimental Fiction</td>
+			   </tr>
+		   </table>
 
    </main>	  
    <footer>

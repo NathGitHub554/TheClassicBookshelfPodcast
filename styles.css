@@ -39,11 +39,11 @@
 					margin: 0px;
 		            }
 					
-		#subtitle {font-family: TitleFOnt;
+		.subtitle {font-family: TitleFont;
 		             color: gold;
 					 font-size: 4em;
 		             text-shadow: 3px 3px 1px black;
-					 margin-left: 300px;
+					 margin-left: 100px;
 					 margin-top: 0px;
 					 margin-bottom: 0px;
 					 margin-right: 0px;
@@ -127,7 +127,8 @@
 				  font-weight: bold;
 		          font-size: 1.3em;
 				  text-align: center;
-				  margin-bottom: 60px;}
+				  margin-bottom: 60px;
+				  }
 				  
 	    #contact-title {font-size: 1.5em;}
 	    
