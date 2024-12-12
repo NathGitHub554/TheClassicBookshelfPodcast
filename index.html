@@ -15,7 +15,8 @@
 		body {background-color: forestgreen;
 		      width: 100%;
 			  display: flex;
-			  flex-direction: column;}
+			  flex-direction: column;
+			  flex-wrap: wrap;}
 			  
 		#shelfImg {display: block;
 		           border-bottom: 5px solid black;
@@ -266,9 +267,9 @@
 		
 		@media only screen and (max-width: 600px) {
 		
-		#maintitle {font-size: 3em;}
+		.maintitle {font-size: 3em;}
 		
-		#subtitle {font-size: 2em;
+		.subtitle {font-size: 2em;
 		           margin-left: 10px;}
 		
 		#titleSwirl {width: 90px;
@@ -307,6 +308,8 @@
 			#desc-main {width: 95%;
 						margin-right: auto;
 						margin-left: auto;
+						padding-left: 10px;
+						padding-right: 10px;
 			            }
 						
 			#eplist {width: 95%;
@@ -346,7 +349,7 @@
 <!--this is a comment for mark-up-->
       <header>
       <a href="index.html" id="titlelink"><img class="title" id="titleSwirl"src="assets/Swirl.png" alt="gold swirl"></a>
-	  <h1 id="maintitle">The Classic Bookshelf Podcast</h1>
+	  <h1 class="maintitle">The Classic Bookshelf Podcast</h1>
 	  <h2 class="subtitle">Classic Short Stories, Read Aloud</h2>
 
     <nav class="sitenav" id="navbar">
@@ -483,7 +486,7 @@
 	       <p class="contact" id="contact-title">Contact Me:</p>
 	       <p class="contact">Phone: <a href="tel:222-333-4444">222-333-4444</a></p>
 	       <p class="contact">Email: <a href="mailto:ClassicPodcast@TheClassicBookshelfPodcast.com">ClassicPodcast@TheClassicBookshelfPodcast.com</a></p>
-		   <p>Address: <a href="https://maps.app.goo.gl/mA2zYxLpyKHkuAVB9" target="_blank">27055 Orchard Lake Road, Farmington Hills, MI 48334</a></p>
+		   <p class="contact">Address: <a href="https://maps.app.goo.gl/mA2zYxLpyKHkuAVB9" target="_blank">27055 Orchard Lake Road, Farmington Hills, MI 48334</a></p>
 	    </address>
 		<p id="copy" class="footext">Copyright &copy;&nbsp;2024 The TBD Podcast</p>
    </footer>

@@ -32,7 +32,7 @@
 					 
 		
 					 
-		#maintitle {font-family: TitleFont;
+		.maintitle {font-family: TitleFont;
 		            color: gold;
 					font-size: 7em;
 					text-shadow: 3px 3px 1px black;
@@ -99,6 +99,9 @@
 						  border-bottom: 0px;}
 						  
 			.topnav:link:last-child {border-bottom: 5px solid black;}
+			
+			.contact {text-align: center;
+			          font-size: 1em;}
 		}
 		
 		   
@@ -115,7 +118,7 @@
 				}
 				
 	    #copy {font-family: Arial, Sans-serif;
-		       font-size: 1.5em;
+		       font-size: 1.3em;
 			   text-align: center;
 			   padding: 0.5em auto;
 			   padding-bottom: 30px;
@@ -131,5 +134,9 @@
 				  }
 				  
 	    #contact-title {font-size: 1.5em;}
+		
+		.contact {overflow-wrap: break-word;
+		          padding-left: 30px;
+				  padding-right: 30px;}
 	    
 		
