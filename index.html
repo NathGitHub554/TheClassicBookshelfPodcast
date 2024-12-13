@@ -16,11 +16,13 @@
 		      width: 100%;
 			  display: flex;
 			  flex-direction: column;
-			  flex-wrap: wrap;}
+			  flex-wrap: wrap;
+			  overflow-x: hidden;}
 			  
 		#shelfImg {display: block;
 		           border-bottom: 5px solid black;
-		           width: 100%;
+		           width: auto;
+				   height: 100%;
 				   clear: both;}
 		
 		h2.intro {text-align: center;
@@ -276,11 +278,7 @@
 		             height: 90px;
 					 margin-top: 5px;
 					 margin-bottom: 0px;}
-					 
-		#shelfImg {width: auto;
-		           height: 100%;
-				   }
-		
+
 		#things_todo {display: flex;
 			              flex-direction: column;
 					      justify-content: center;
@@ -331,7 +329,7 @@
 		}
 		
 		@media only screen and (min-width: 600px) {
-		
+				
 		.maintitle {font-size: 3em;}
 		
 		.subtitle {font-size: 2em;
@@ -478,7 +476,15 @@
    </header>
    
    <main>
-       <img id="shelfImg" src="assets/bookshelf.png" alt="bookshelf">
+   
+       <picture>
+           <source media="(min-width: 650px)" srcset="img_food.jpg">
+           <source media="(min-width: 465px)" srcset="img_car.jpg">
+
+       </picture>
+	   
+	              <img id="shelfImg" src="assets/bookshelf.png" alt="bookshelf">
+       
 	   
 	   
 	   <section class="intro-section">
