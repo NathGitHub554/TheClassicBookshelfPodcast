@@ -123,6 +123,8 @@
 				 margin: auto;
 				 text-align: left;
 				 width: 95%;}
+				 
+/*-----------------------------FORM CSS-------------------------------------------------------*/				 
 			  
 		#form {display: block;
 		       background-color: springgreen;
@@ -160,15 +162,13 @@
 		.radiolabel {margin-left: 5%;}
 		
 		input[type="submit"], input[type="reset"] {display: inline-block;
-		                                           width: 40%;
-				                                   height: 2em;
+		                                           width: 30%;
+				                                   height: 1.6em;
 												   border: 5px solid forestgreen;
 												   border-radius: 50px;
 												   background-color: gold;
 												   font-weight: bold;
-												   font-size: 1.4em;
-												   /*margin-left: 10%;
-												   margin-right: 10%;*/}
+												   font-size: 1.2em;}
 										
 	    input[type="submit"] {margin-right: 5%;
 		                      margin-left: 4%;}
@@ -179,6 +179,16 @@
 		input[type="reset"]:hover {background-color: #f15c5c;}
 		
 		input[type="submit"]:hover {background-color: #0f0;}
+		
+		.buttons {display: flex;
+		         justify-content: center;
+				 width: 90%;
+				 margin-right: auto;
+				 margin-left: auto;
+				 margin-top: 20px;
+				 gap: 50px;}
+				 
+/*----------------------------------------------------------------------------------------------*/
 		
 		#totop:link {display: block;
 		             float: right;	
@@ -342,8 +352,11 @@
 		  <p>If I choose your idea, do you want me to say your name in the episode's introduction? <span>*</span></p>
 		  <label class="radiolabel" for="yes">Yes</label><input type="radio" name="sayname" id="yes" value="yes"><br>
 		  <label class="radiolabel" for="no">No</label><input type="radio" name="sayname" id="no" value="no"><br>
-		  <input type="reset" value="Reset">
-		  <input type="submit" value="Submit">
+		  
+		  <section class="buttons">
+		      <input type="reset" value="Reset">
+		      <input type="submit" value="Submit">
+		  </section>
 	  </form>
 	  </article>
 
