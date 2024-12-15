@@ -114,10 +114,10 @@
 			   line-height: 1.4;
 			   }
 			   
-		#read {column-count: 2;
+		#read {/*column-count: 2;*/
 			   column-gap: 30px;
 			   column-rule: 5px solid gold;
-			   column-width: 100px;}
+			   column-width: 500px;}
 			   
 		#readtitle {column-span: all;}
 		
@@ -149,7 +149,8 @@
 		
 		#formtitle {text-align: center;
 		            font-size: 1.5em;
-					color: black;}
+					color: black;
+					margin-top: 10px;}
 		
 		input[type="text"], input[type="email"], input[type="file"] {margin-bottom: 30px;
 		                                                            margin-right: auto;
@@ -185,6 +186,8 @@
 				 margin-top: 20px;
 				 gap: 50px;}
 		
+		.required {margin-left: 0px;
+		           padding-left: 0px;}
 				   
 		
    </style>
@@ -216,7 +219,7 @@
         <article id="joinIntro">
 		    <h2>Do you want to be on the air?</h2> 
 			
-			<p>Do you want to perform in an episode of <em>The Classic Bookshelf Podcast?</em> You can audition to read as a character in a future episode of the podcast. To Join the Show, you need to choose a character from the future episodes list, and then send in an audition. I will review your submission, and if you are accepted, I will contact you, and you can record a story with me. Come Join the Show today! See detailed instructions below:</p>
+			<p>Do you want to perform in an episode of <em>The Classic Bookshelf Podcast?</em> You can audition to read as a character in a future episode of the podcast. To Join the Show, you need to choose a character from the future episodes list, and then send in an audition. I will review your submission, and if you are accepted, I will contact you, and you can record a story with me. Join the Show today! See detailed instructions below:</p>
 		</article>
 		
 		<hr>
@@ -350,7 +353,7 @@
         <h3 class="steps">Step 3: Submit Your Audition</h3>
 		<article id="form" class="steps">
 	        <h3 id="formtitle">Fill out your information and upload your audio file</h3>
-			<p><span>*</span> indicates a requried field</p>
+			<p class="required"><span>*</span> indicates a requried field</p>
 			
 	        <form method="post" action="mailto:ClassicPodcast@TheClassicBookshelfPodcast.com">
 	            <label for="audiofile">Upload Audio File: <span>*</span></label><br>
