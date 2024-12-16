@@ -216,8 +216,6 @@
 				
 	/*------------------MEDIA QUIERY SECTION----------------------------------------------------*/
 		
-		/* Media Query Section*/
-		
 		@media only screen and (max-width: 600px) {
 		
 		.maintitle {font-size: 3em;}
@@ -288,11 +286,11 @@
 					 margin-bottom: 0px;}
 		
 		#things_todo {display: flex;
-			              flex-direction: column;
-					      justify-content: center;
-					      align-items: center;}
+			          flex-direction: column;
+					  justify-content: left;
+					  align-items: center;}
 						  
-			.todo, .text {display: flex;
+		.todo, .text {display: flex;
 			       flex-direction: column;
 				   justify-content: center;
 				   align-items; center;
@@ -302,9 +300,6 @@
 			             font-size: 1.5em;
 						 text-align: left;
 			             }
-						 
-			.todo_photo {margin-right: auto;
-			             margin-left: auto;}
 			
 			.para {margin-top: 5px;}
 			
@@ -318,24 +313,25 @@
 			#desc-main {width: 95%;
 						margin-right: auto;
 						margin-left: auto;
+						margin-top: 5px;
 						padding-left: 10px;
 						padding-right: 10px;
 			            }
 						
-			#eplist {width: 95%;
-			         margin-left: auto;
-			         margin-right: auto;}
+			#eplist {width: 95%;}
+			
+			table.storylist {margin-right: auto;
+			                 margin-left: auto;}
+					 
+
 						
 		    .intro-section {display: flex;
 			                flex-direction: column;
 							}
 							
 			.bye {display: block;
-			      font-size: 1.1em;
-			      padding: 30px;}			
-                  			
-			
-					
+			      font-size: 2.0em;
+			      padding: 30px;}
 		}
 		
 		@media only screen and (min-width: 768px) {
@@ -355,8 +351,8 @@
 					      justify-content: center;
 					      align-items: center;}
 						  
-			.todo, .text {display: flex;
-			       flex-direction: column;
+	    .todo, .text {display: flex;
+			       flex-direction: row;
 				   justify-content: center;
 				   align-items; center;
 				   width: 95%;}
@@ -383,7 +379,7 @@
 						padding-right: 10px;
 			            }
 						
-		    /*.intro-section {display: flex;
+		    .intro-section {display: flex;
 			                flex-direction: column;
 							}*/
 		
