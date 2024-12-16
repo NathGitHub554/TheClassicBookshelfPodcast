@@ -109,6 +109,8 @@
 							color: black;}
 							
 		a.download:hover {box-shadow: 0px 0px 10px forestgreen;}
+		
+		a.download:focus {border: 7px solid blue;}
 			   
 		hr {background-image: radial-gradient(yellow, gold);
 		    border-radius: 10px;
@@ -123,6 +125,40 @@
 				 margin: auto;
 				 text-align: left;
 				 width: 95%;}
+				 
+/*-----------------------------AUTHOR IMAGES CSS----------------------------------------------*/
+
+        .authorImg {display: block;
+		            border-radius: 25px;
+				    box-shadow: none;
+				    padding: 10px;
+				    background-image: linear-gradient(to bottom right, gold, yellow);
+					margin-right: auto;
+					margin-left: auto;}
+				   
+		.authorImg:hover {box-shadow: 6px 6px 3px black;}
+				   
+		.caption {font-family: Arial, "sans-serif";
+		          font-weight: bold;
+				  font-size: 1.5em;
+				  margin-top: 20px;
+				  margin-bottom: 50px;
+				  text-align: center;}
+				  
+		.authors {display: block;
+		          float: left;
+				  width: 25%;
+				  margin-left: 5%;
+				  margin-left: 10px;}
+				  
+		.authorTitle {display: block;
+		              font-family: Arial, "sans-serif";
+		              font-size: 1.5em;
+					  font-weight: bold;
+					  text-align: center;
+					  padding: 20px;
+					  margin-top: 50px;
+					  }
 				 
 /*-----------------------------FORM CSS-------------------------------------------------------*/				 
 			  
@@ -161,14 +197,14 @@
 							 
 		.radiolabel {margin-left: 5%;}
 		
-		input[type="submit"], input[type="reset"] {display: inline-block;
-		                                           width: 30%;
-				                                   height: 1.6em;
-												   border: 5px solid forestgreen;
-												   border-radius: 50px;
-												   background-color: gold;
-												   font-weight: bold;
-												   font-size: 1.2em;}
+		.controls {display: inline-block;
+		           width: 30%;
+				   height: 1.6em;
+				   border: 5px solid forestgreen;
+				   border-radius: 50px;
+				   background-color: gold;
+				   font-weight: bold;
+		           font-size: 1.2em;}
 										
 	    input[type="submit"] {margin-right: 5%;
 		                      margin-left: 4%;}
@@ -216,6 +252,8 @@
 				
 	    #totop:hover {box-shadow: 0px 0px 20px gold;}
 		
+		#totop:focus {border: 10px solid black;}
+		
    </style>
 </head>
 <body>
@@ -255,11 +293,30 @@
 	  <aside>
 	      <h3>Latest Episodes</h3>
 		  <hr>
-	      <a href="#ep1" tabindex="1">Episode 1: The Diamond Necklace</a> <br><br>
-		  <a href="#ep2" tabindex="2">Episode 2: The Beginning of the Armadillos</a> <br><br>
-		  <a href="#ep3" tabindex="3">Episode 3: The Queer Feet</a> <br><br>
-		  <a href="#ep4" tabindex="4">Episode 4: The Ransom of Red Chief</a>
+	      <a href="#ep1">Episode 1: The Diamond Necklace</a> <br><br>
+		  <a href="#ep2">Episode 2: The Beginning of the Armadillos</a> <br><br>
+		  <a href="#ep3">Episode 3: The Queer Feet</a> <br><br>
+		  <a href="#ep4">Episode 4: The Ransom of Red Chief</a>
 	  </aside>
+	  
+	  <article class="authors">
+	      <h3 class="authorTitle">For more stories, click an image of an author to see their books on Project Gutenberg</h3>
+		  
+		  <figure>
+		      <a href="https://www.gutenberg.org/ebooks/author/634"><img class="authorImg" src="assets/henry.jpg" alt="image of author O. Henry"></a>
+		      <figcaption class="caption">O. Henry</figcaption>
+		  </figure>
+		  
+		  <figure>
+		      <a href="https://www.gutenberg.org/ebooks/author/80"><img class="authorImg" src="assets/chesterton.jpg" alt="imgage of author G. K. Chesterton"></a>
+		      <figcaption class="caption">G. K. Chesterton</figcaption>
+		  </figure>
+		  
+		  <figure>
+		      <a href="https://www.gutenberg.org/ebooks/author/132"><img class="authorImg" src="assets/kipling.jpg" alt="image of author Rudyard Kipling" title="image of author Rudyard Kipling"></a>
+		      <figcaption class="caption">Rudyard Kipling</figcaption>
+		  </figure>
+      </article>
 	  
 		  <article class="episodes" id="ep1">
 	          <h3 class="eptitle" class="info">Episode 1: The Diamond Necklace: <br/>Guy de Maupassant</h3>
@@ -292,7 +349,7 @@
 			  
 		      <hr>
 			  
-		      <p class="summary"><strong>Summary:</strong> Stickly-prickly Hedghog and Slow-and-Solid Tortise must outwit Painted Jaguar and avoid being eaten. This is one of Rudyard Kipling's <em>Just So Stories,</em> and it explains how the armadillo came to be.</p>
+		      <p class="summary"><strong>Summary:</strong> A Hedghog and his friend the Tortise must outwit a Jaguar and avoid being eaten. This is one of Rudyard Kipling's <em>Just So Stories,</em> and it explains how the armadillo came to be.</p>
 		      <hr>
 		      <a class="download" href="https://www.gutenberg.org/cache/epub/2781/pg2781-images.html#link2H_4_0007">Story Source</a> <a class="download" href="Podcast/Transcripts/The_Beginning_of_the_Armadillo_Transcript.pdf" target="_blank"> Transcript</a>
 	      </article>
@@ -310,7 +367,7 @@
 			  
 		      <hr>
 			  
-		      <p class="summary"><strong>Summary:</strong> A gentlemen's club meets in a fancy restaurant for their ceremonial dinner. The most important part of the dinner is the fish course, which they eat with their most precious posession: their set of gilded silver forks. However, after the dinner, they discover the silverware has been stolen. The mystery is solved by a Catholic priest named Father Brown. </p>
+		      <p class="summary"><strong>Summary:</strong> A gentlemen's club meets in a fancy restaurant for their ceremonial dinner. The most important part of the dinner is the fish course, which they eat with their precious set of silver forks. However, after the dinner, they discover the silverware has been stolen. The mystery is solved by a Catholic priest named Father Brown. </p>
 		      <hr>
 		      <a class="download" href="https://www.gutenberg.org/cache/epub/204/pg204-images.html#chap03">Story Source</a> <a class="download" href="Podcast/Transcripts/The_Queer_Feet_Transcript.pdf" target="_blank"> Transcript</a>
 	      </article>
@@ -328,7 +385,7 @@
 			  
 			  <hr>
 			  
-		      <p class="summary"><strong>Summary:</strong> Two "desprate criminals" Sam and Bill, kidnap a kid named Johnny, who loves pretending to be an Indian named "Red Chief." Sam and Bill try to hold Johnny for ransom, but he ends up being more than they bargained for.</p>
+		      <p class="summary"><strong>Summary:</strong> Two "desprate criminals" Sam and Bill, kidnap a kid named Johnny, who loves pretending to be an Indian named "Red Chief." Sam and Bill try to hold Johnny for ransom, but they find that Johnny is more trouble than they thought.</p>
 		      <hr>
 		      <a class="download"  href="https://www.gutenberg.org/files/1595/1595-h/1595-h.htm#chap08">Story Source</a> <a class="download" href="podcast/transcripts/The_Ransom_of_Red_Chief_Transcript.pdf" target="_blank">Transcript</a>
 	      </article>
@@ -336,7 +393,7 @@
 	  
 	  <article id="form">
 	  <h3 id="formtitle">What story should I read next? Submit your idea below.</h3>
-	  <p><span>*</span> indicates a requried field</p>
+	  <p>An asterix <span>*</span> indicates a requried field</p>
 	  
 	  <form method="post" action="mailto:ClassicPodcast@TheClassicBookshelfPodcast.com">
 	      <label for="idea">Story Idea: <span>*</span></label><br>
@@ -351,11 +408,11 @@
 		  
 		  <p>If I choose your idea, do you want me to say your name in the episode's introduction? <span>*</span></p>
 		  <label class="radiolabel" for="yes">Yes</label><input type="radio" name="sayname" id="yes" value="yes"><br>
-		  <label class="radiolabel" for="no">No</label><input type="radio" name="sayname" id="no" value="no"><br>
+		  <label class="radiolabel" for="no">No</label><input type="radio" name="sayname" id="no" value="no">
 		  
 		  <section class="buttons">
-		      <input type="reset" value="Reset">
-		      <input type="submit" value="Submit">
+		      <input type="reset" value="Reset" class="controls">
+		      <input type="submit" value="Submit" class="controls">
 		  </section>
 	  </form>
 	  </article>

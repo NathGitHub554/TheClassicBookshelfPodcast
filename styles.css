@@ -1,6 +1,11 @@
 * {box-sizing: border-box;}
 
 	a {color: gold;}
+	
+	a:focus {border: 3px solid black;
+	border-radius: 10px;}
+	
+	a.topnav:focus{border: 3px solid white;}
 
 @font-face {font-family: "TitleFont";
             src: url(fonts/VIVALDII.TTF);
@@ -8,7 +13,7 @@
 	   
 	   body {margin: 0px;
 	         font-size: 100%;
-			 background-color: #0b710b;
+			 background-color: forestgreen;
 			 overflow-x: hidden;}
    
        main {display: block;
@@ -17,7 +22,7 @@
 			 margin-left: auto;
 			 margin-right: auto;
 			 margin-top: 0px;
-			 background-color: #0b710b;
+			 background-color: forestgreen;
 			}
    
        header {background-image: linear-gradient(to right, #0b710b 12%, forestgreen 100%);
@@ -106,7 +111,7 @@
 		}
 		
 		   
-	    footer {background-color: forestgreen;
+	    footer {background-color: #0b710b;
 	            width: 100%;
 				height: 100%;
 			    margin-left: 0px;
@@ -126,12 +131,12 @@
 			   margin: 0px;
 		      }
 			  
-		address {font-style: normal;
-		          font-family: Arial, "sans-serif";
-				  font-weight: bold;
-		          font-size: 1.1em;
-				  text-align: center;
-				  margin-bottom: 60px;
+		address {font-style: normal !important;
+		          font-family: Arial, "sans-serif" !important;
+				  font-weight: bold !important;
+		          font-size: 1.3em !important;
+				  text-align: center !important;
+				  margin-bottom: 60px !important;
 				  }
 				  
 	    #contact-title {font-size: 1.7em;
