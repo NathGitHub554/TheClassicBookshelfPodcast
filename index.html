@@ -40,26 +40,29 @@
 			border-radius: 70px;
 			margin-bottom: 2em;}
 			   
-	    table.storylist {border-collapse: collapse;
-						 border: 3px solid black;
+	    table.storylist {border-spacing: 10px;
+						 background-color: linear-gradient(gold, green);
 		                 }
 						 
 		caption {caption-side: bottom;
-		         font-size: 1.15em;
+		         font-size: 1.5em;
 				 font-weight: bold;
 				 color: gold;
 				 margin-top: 20px;}
 		
-		td.storylist, th.storylist {border: 4px solid black;
-		                            padding: 15px;
+		td.storylist, th.storylist {padding: 15px;
 		           	                font-family: Arial, sans-serif;
-					                width: 100%;}
+					                }
 					  
 		td.storylist {background-color: rgb(243,245,143);
-		              font-size: 1.2em;}
+		              font-size: 1.2em;
+					  border-radius: 25px;}
+					  
+		td.storylist:hover {background-color: springgreen;}
 		
-		th.storylist {background-color: springgreen;
-		              font-size: 2em;}
+		#storytitle {background-color: gold;
+		             border-radius: 20px;
+		             font-size: 2em;}
 					  
 		
 			
@@ -111,7 +114,7 @@
 	    
 			
 	    #eplist {float: right;
-		         width: 30%;
+		         width: 20%;
 				 margin-left: 50px;
 				 margin-right: 30px;
 				 margin-top: 10px;
@@ -222,44 +225,6 @@
 		100% {transform: translateY(0px)}
 		
 		}
-	
-	/*#headphones {display: block;
-	       width: 83px;
-	       height: 80px;
-	       background-image: url(assets/headphones.png);
-		   background-repeat: no-repeat;
-		   background-position: center center;
-		   padding: 20px;
-		   transition: background-color 0.5s;
-		   }
-	
-	#lightbulb {display: block;
-	       width: 54px;
-	       height: 80px;
-	       background-image: url(assets/lightbulb.png);
-		   background-repeat: no-repeat;
-		   background-position: center center;
-		   transition: background-color 0.5s;}
-		   
-	#microphone {display: block;
-	       width: 40px;
-	       height: 80px;
-	       background-image: url(assets/mic.png);
-		   background-repeat: no-repeat;
-		   background-position: center center;
-		   transition: background-color 0.5s;}*/
-		   
-	figure {display: flex;
-	        flex-direction: column;
-			justify-content: center;
-			align-items: center;
-	        width: 200px;
-			height: 90%;
-	        border: 5px solid black;
-	        background-color: gold;
-			border-radius: 50px;
-			padding: 10px;
-			box-shadow: 5px 5px 4px black;}
 				
 	/*----------------------------------------------------------------------*/
 				
@@ -321,8 +286,6 @@
 		    .intro-section {display: flex;
 			                flex-direction: column;
 							}
-							
-			figure {margin-bottom: 50px;}
 			
 			.animation {animation-play-state: paused;}
 
@@ -437,9 +400,7 @@
 		    /*.intro-section {display: flex;
 			                flex-direction: column;
 							}*/
-							
-			figure {margin-bottom: 50px;}
-			
+
 			.animation {animation-play-state: paused;}
 		
 		}
@@ -492,7 +453,7 @@
 	       <table class="storylist">
 		   <caption>Latest Podcast Episodes</caption>
 		       <tr>
-		            <th class="storylist">Latest Episodes</th>
+		            <th class="storylist" id="storytitle">Latest Episodes</th>
 				</tr>	
 		   
 		       <tr>
@@ -526,26 +487,6 @@
 	   <hr class="divider">
 	   
 	   <h3 id="todo_title">Things to Do:</h3>
-	   
-	   <!--<article id="icons">
-	       
-		   <section id="things_todo">
-		   <a href="#listen"><figure class="animation">
-		       <img src="assets/headphones.png" alt="headphones icon">
-			   <figcaption>Listen</figcaption>
-		   </figure></a>
-		   
-		   <a href="#submit"><figure class="animation">
-		       <img src="assets/lightbulb.png" alt="lightbulb icon">
-   		       <figcaption>Submit a Story Idea</figcaption>
-		   </figure></a>
-		   
-		   <a href="#join"><figure class="animation">
-		      <img src="assets/mic.png" alt="microphone icon">
-			  <figcaption>Join the Show</figcaption>
-		   </figure></a>
-		   </section>
-		</article>-->
 		
 		<article class="todo">
 		    <img id="listen" class="todo_photo" src="assets/headphones_man.jpg" alt="man wearing headphones">
