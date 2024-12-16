@@ -409,7 +409,12 @@
 		
 		@media only screen and (min-width: 992px) {}
 		
-		@media only screen and (min-width: 1200px) {}
+		@media only screen and (min-width: 1200px) {.intro-section {display: flex;
+		                                                     flex-direction: row;
+															 justify-content: left;}
+													
+													#eplist {order: 2;}
+													}
 
 
 		
@@ -449,7 +454,8 @@
 	   
 	   
 	   <section class="intro-section">
-	   <article id="eplist">
+	   
+	    <article id="eplist">
 	       <table class="storylist">
 		   <caption>Latest Podcast Episodes</caption>
 		       <tr>
@@ -479,6 +485,8 @@
 		   
 		   <a class="cta" href="episodes.html">Listen Here</a>
 	   </article> 
+	   
+	  
 	   </section>
 	   
 	   		   
