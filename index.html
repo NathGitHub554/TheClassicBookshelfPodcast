@@ -33,12 +33,6 @@
 				  
 		h3 {font-size: 1.6em;
 		    margin-top: 0px;}
-				  
-	    hr {background-color: gold;
-		    height: 0.2em;
-			width: 80%;
-			border-radius: 70px;
-			margin-bottom: 2em;}
 			   
 	    table.storylist {border-spacing: 10px;
 						 background-color: linear-gradient(gold, green);
@@ -125,12 +119,23 @@
 					
 	    hr.divider {background-color: gold;
 		            border: none;
+					border-radius: 25px;
 					height: 0.5em;
 					margin-top: 100px;
 					margin-bottom: 80px;
 					margin-left: auto;
 					margin-right: auto;
 					width: 95%;}
+					
+		hr.decoration {background-color: gold;
+		               border: none;
+					   border-radius: 25px;
+					   height: 0.15em;
+					   width: 80%;
+					   margin-bottom: 50px;}
+					
+		#end-hr {margin-top: 20px;
+		         width: 90%;}
 					
 		
 		#todo_title {font-size: 3em;
@@ -195,44 +200,21 @@
 						
 		.sub_cta:focus {border: 10px solid blue;}
 						
-	/*--------------------icon section--------------------------------------------*/
-						
-	
-	.animation:hover {animation-name: wiggle;
-		              animation-duration: 1.4s;
-		              animation-iteration-count: infinite;
-		              animation-direction: alternate;
-				      box-sizing: border-box;}
+		footer {clear: both;}
+		
+		.bye {clear: both;
+		      text-align: center;
+		      display: block;
+			  width: 100%;
+		      font-family: TitleFont;
+		      font-weight: bold;
+			  font-size: 3.5em;
+			  color: gold;
+			  text-shadow: 1px 2px black;
+			  margin-top: 50px;
+			  margin-bottom: 0px;}
 				
-	@keyframes wiggle {
-	
-	    0% {transform: translateY(0px);}
-		
-		10% {transform: translateY(2px)}
-		
-		20% {transform: translateY(4px)}
-		
-		30% {transform: translateY(8px)}
-		
-		40% {transform: translateY(10px)}
-		
-		50% {transform: translateY(11px)}
-		
-		60% {transform: translateY(10px)}
-		
-		70% {transform: translateY(8px)}
-		
-		80% {transform: translateY(4px)}
-		
-		90% {transform: translateY(2px)}
-		
-		100% {transform: translateY(0px)}
-		
-		}
-				
-	/*----------------------------------------------------------------------*/
-				
-	    footer {clear: both;}
+	/*------------------MEDIA QUIERY SECTION----------------------------------------------------*/
 		
 		/* Media Query Section*/
 		
@@ -291,8 +273,6 @@
 			                flex-direction: column;
 							}
 			
-			.animation {animation-play-state: paused;}
-
 		}
 		
 		@media only screen and (min-width: 600px) {
@@ -351,9 +331,7 @@
 							}
 							
 			figure {margin-bottom: 50px;}
-			
-			.animation {animation-play-state: paused;}
-		
+					
 		}
 		
 		@media only screen and (min-width: 768px) {
@@ -404,8 +382,6 @@
 		    /*.intro-section {display: flex;
 			                flex-direction: column;
 							}*/
-
-			.animation {animation-play-state: paused;}
 		
 		}
 		
@@ -477,7 +453,7 @@
 	   <article id="desc-main">
 	       <h2 class="intro">Welcome to the <em>Classic Bookshelf Podcast</em></h2>
 		   
-		   <hr>
+		   <hr class="decoration">
 		   
 		   <p>The Classic Bookshelf Podcast features classic, public domain short stories, read by <a href="AboutPage.html">Nathanael Bayne.</a> Each episode features a new story by authors like Charles Dickens or G. K. Chesterton. The stories can be serious, funny, or scary, but they are all tales that deserve to be listened to. I hope you enjoy listening to this incredible podcast.</p>
 		   
@@ -516,36 +492,15 @@
 		    <img id="join" class="todo_photo" src="assets/podcasting_man.jpg" alt="a man podcasting">
 		    <section class="text">
 		        <h3 class="title_todo">Join the Show: Read in an Episode</h3>
-			    <p class="para">Do you want to read in one of <em>The Classic Bookshelf Podcast</em> episodes? To Join the Show, look at the future episodes, and choose a character you want to do. Then, follow the instructions to fill out the form and submit your audition. I will look at your audition and contact you if you have been accepted to Join the Show. See future stories below:</p>
+			    <p class="para">Do you want to read in one of <em>The Classic Bookshelf Podcast</em> episodes? To Join the Show, look at the future episodes, and choose a character you want to do. Then, follow the instructions to fill out the form and submit your audition. I will look at your audition and contact you if you have been accepted to Join the Show.</p>
 			    <a class="sub_cta" href="JoinTheShow.html">Read on the Show</a>
 		    </section>
 		</article>			
 		
-			<table class="future">
-			   <tr>
-			       <th class="future">Story</th>
-				   <th class="future">Author</th>
-				   <th class="future">Genre</th>
-			   </tr>
-			   
-			   <tr>
-			       <td class="future">The Signal-Man</td>
-				   <td class="future">Charles Dickens</td>
-				   <td class="future">Ghost Story</td>
-			   </tr>
-			   
-			   <tr>
-			       <td class="future">The Red-Headed League</td>
-				   <td class="future">Arthur Conan Doyle</td>
-				   <td class="future">Mystery</td>
-			   </tr>
-			   
-			   <tr>
-			       <td class="future">The Gift of the Maji</td>
-				   <td class="future">O. Henry</td>
-				   <td class="future">Sentimental Fiction</td>
-			   </tr>
-		   </table>
+    
+		
+	<h3 class="bye">I hope you enjoy listening to The Classic Bookshelf Podcast!</h3>
+	<hr class="divider" id="end-hr">
 
    </main>	  
    <footer>
