@@ -10,8 +10,6 @@
    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
    
    <style>
-        
-        
 		body {background-color: forestgreen;
 		      width: 100%;
 			  display: flex;
@@ -246,9 +244,7 @@
 						 
 			.todo_photo {margin-right: auto;
 			             margin-left: auto;}
-			
-			.para {margin-top: 5px;}
-			
+						
 			a.cta {width: 60%;}
 			
 				   
@@ -275,40 +271,20 @@
 		
 		@media only screen and (min-width: 600px) {
 				
-		.maintitle {font-size: 3em;}
+		.maintitle {font-size: 3.5em;}
 		
-		.subtitle {font-size: 2em;
+		.subtitle {font-size: 2.5em;
 		           margin-left: 10px;}
 		
-		#titleSwirl {width: 90px;
-		             height: 90px;
+		#titleSwirl {width: 110px;
+		             height: 110px;
 					 margin-top: 5px;
 					 margin-bottom: 0px;}
 		
 		#things_todo {display: flex;
 			          flex-direction: column;
 					  justify-content: left;
-					  align-items: center;}
-						  
-		.todo, .text {display: flex;
-			       flex-direction: column;
-				   justify-content: center;
-				   align-items; center;
-				   width: 95%;}
-				   
-			.title_todo {margin-top: 20px;
-			             font-size: 1.5em;
-						 text-align: left;
-			             }
-			
-			.para {margin-top: 5px;}
-			
-			a.cta {width: 60%;}
-			
-				   
-			.sub_cta {margin-right: auto;
-			          margin-left: auto;
-					  width: 60%;}
+					  align-items: center;}			
 					 
 			#desc-main {width: 95%;
 						margin-right: auto;
@@ -323,8 +299,6 @@
 			table.storylist {margin-right: auto;
 			                 margin-left: auto;}
 					 
-
-						
 		    .intro-section {display: flex;
 			                flex-direction: column;
 							}
@@ -341,64 +315,101 @@
 		.subtitle {font-size: 2.5em;
 		           margin-left: 10px;}
 		
-		#titleSwirl {width: 90px;
-		             height: 90px;
+		#titleSwirl {width: 120px;
+		             height: 120px;
 					 margin-top: 5px;
 					 margin-bottom: 0px;}
-		
-		#things_todo {display: flex;
-			              flex-direction: column;
-					      justify-content: center;
-					      align-items: center;}
 						  
-	    .todo, .text {display: flex;
+	    .todo {display: flex;
 			       flex-direction: row;
 				   justify-content: center;
-				   align-items; center;
 				   width: 95%;}
+		
+		.text {align-items: flex-start;
+		       height: 100%;
+			   width: 60%;}
 				   
-			.title_todo {margin-top: 20px;
-			             font-size: 1.5em;
-						 text-align: left;
+		.title_todo {margin-top: 0px;
+			         font-size: 1.5em;
+				     text-align: left;
 			             }
 						 
-			.title_photo {display; flex;
-			              justify-content: left;}
+		.title_photo {display; flex;
+			          justify-content: left;}
 			
-			.para {margin-top: 5px;}
-			
-			a.cta {width: 60%;}
+		a.cta {width: 60%;}
 			
 				   
-			.sub_cta {width: 60%;}
+		.sub_cta {width: 70%;
+			      margin-left: 0px;}
 					 
-			#desc-main {width: 95%;
-						margin-right: auto;
-						margin-left: auto;
-						padding-left: 10px;
-						padding-right: 10px;
+		#desc-main {width: 60%;
+					padding-left: 10px;
+					padding-right: 0px;
+					margin-right: 0px;
+					margin-left: 20px;
 			            }
 						
-		    .intro-section {display: flex;
-			                flex-direction: column;
-							}*/
+		#eplist {order: 1;
+		         width: 30%;
+				 margin-right: 0px;
+				 margin-top: 70px;
+				 margin-left: 60px;}
+						
+		.intro-section {display: flex;
+			            flex-direction: row;
+							}
+							
+		.bye {font-size: 3em;}  	
 		
 		}
 		
 		
 		
-		@media only screen and (min-width: 992px) {}
+		@media only screen and (min-width: 992px) {
 		
-		@media only screen and (min-width: 1200px) {.intro-section {display: flex;
-		                                                     flex-direction: row;
-															 justify-content: left;}
-													
-													#eplist {order: 2;}
-													}
-
-
+		    .maintitle {font-size: 4.5em;}
+			
+			.subtitle {font-size: 3.5em;}
+			
+			#titleSwirl {width: 160px;
+			             height: 160px;}
+			
+			#eplist {width: 35%;
+			         margin-right: 30px;}
+					 
+			#desc-main {width: 65%;
+			            margin-left: 30px;}
+						
+			a.cta {width: 40%;}
+			
+			a.sub_cta {width: 45%;}
+			
+			.bye {font-size: 3.5em;}
 		
-				   
+		                                           }
+		
+		@media only screen and (min-width: 1200px) {
+		
+		    .intro-section {display: flex;
+		                    flex-direction: row;
+							justify-content: left;}
+							
+			.maintitle {font-size: 5.5em;}
+			
+			.subtitle {font-size: 4em;
+			           padding-left: 100px;}
+					   
+			#titleSwirl {width: 160px;
+			             height: 160px;}
+						 
+            a.cta {width: 30%;}
+
+            a.sub_cta {width: 40%;}			
+						 
+			.desc {text-align: justify;}
+			
+		}
 		
    </style>
 </head>
@@ -455,7 +466,7 @@
 		   
 		   <hr class="decoration">
 		   
-		   <p>The Classic Bookshelf Podcast features classic, public domain short stories, read by <a href="AboutPage.html">Nathanael Bayne.</a> Each episode features a new story by authors like Charles Dickens or G. K. Chesterton. The stories can be serious, funny, or scary, but they are all tales that deserve to be listened to. I hope you enjoy listening to this incredible podcast.</p>
+		   <p class="desc">The Classic Bookshelf Podcast features classic, public domain short stories, read by <a href="AboutPage.html">Nathanael Bayne.</a> Each episode features a new story by authors like Charles Dickens or G. K. Chesterton. The stories can be serious, funny, or scary, but they are all tales that deserve to be listened to. I hope you enjoy listening to this incredible podcast.</p>
 		   
 		   <a class="cta" href="episodes.html">Listen Here</a>
 	   </article> 
@@ -474,7 +485,7 @@
 		    <img id="listen" class="todo_photo" src="assets/headphones_man.jpg" alt="man wearing headphones">
 		    <section class="text">
 		        <h3 class="title_todo">Listen to the Podcast</h3>
-	            <p class="para">Enjoy listening to the Classic Bookshelf Podcast episodes. Each episode features a new story, from authors such as O. Henry, or G. K. Chesterton, or Rudyard Kipling.</p>
+	            <p>Enjoy listening to the Classic Bookshelf Podcast episodes. Each episode features a new story, from authors such as O. Henry, or G. K. Chesterton, or Rudyard Kipling.</p>
 		        <a class="sub_cta" href="episodes.html">Listen</a>
 		    </section>
 		</article>
@@ -483,7 +494,7 @@
 		    <img id="submit" class="todo_photo" src="assets/submitting_lady.jpg" alt="a lady typing on a computer">
 		    <section class="text">
 		        <h3 class="title_todo">Submit a Story Idea</h3>
-	            <p class="para">If you have an idea for a short story I should read for a future episode, click the link and then fill out the form. If your idea is accepted, I will contact you to let you know. In the episode with that story, I will mention your name in the introduction.</p>
+	            <p>If you have an idea for a short story I should read for a future episode, click the link and then fill out the form. If your idea is accepted, I will contact you to let you know. In the episode with that story, I will mention your name in the introduction.</p>
 		        <a class="sub_cta" href="episodes.html#form">Submit your idea</a>
 		    </section>
 		</article>
@@ -492,7 +503,7 @@
 		    <img id="join" class="todo_photo" src="assets/podcasting_man.jpg" alt="a man podcasting">
 		    <section class="text">
 		        <h3 class="title_todo">Join the Show: Read in an Episode</h3>
-			    <p class="para">Do you want to read in one of <em>The Classic Bookshelf Podcast</em> episodes? To Join the Show, look at the future episodes, and choose a character you want to do. Then, follow the instructions to fill out the form and submit your audition. I will look at your audition and contact you if you have been accepted to Join the Show.</p>
+			    <p>Do you want to read in one of <em>The Classic Bookshelf Podcast</em> episodes? To Join the Show, look at the future episodes, and choose a character you want to do. Then, follow the instructions to fill out the form and submit your audition. I will look at your audition and contact you if you have been accepted to Join the Show.</p>
 			    <a class="sub_cta" href="JoinTheShow.html">Read on the Show</a>
 		    </section>
 		</article>			
